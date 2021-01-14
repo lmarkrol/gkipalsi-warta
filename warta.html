@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<title>GKI Palsigunung</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Bootstrap v4.3.1 CSS -->
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/theme.css">
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+		<!-- Font Awesome Free 5.10.2 CSS JS -->
+		<link href="lib/fontawesome-free-5.10.2-web/css/all.css" rel="stylesheet">
+		<script defer src="lib/fontawesome-free-5.10.2-web/js/brands.js"></script>
+		<script defer src="lib/fontawesome-free-5.10.2-web/js/solid.js"></script>
+    <script defer src="lib/fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
+    
+    <style>
+/* ACCORDION */
+      .accordion {
+        background-color: #f3f3f3;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        /* border-radius: 8px; */
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ffc107;
+        color:white; 
+      }
+      
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+/* ACCORDION */
+
+  /* VERTICAL MENU */
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ffc107;
+  color:white;
+}
+
+.vertical-menu a.active {
+  /* background-color: #4CAF50; */
+  color: white;
+}
+/* VERTICAL MENU */
+
+      </style>
+
+
+	</head>
+	<body class="default">
+		
+<!-- Preloading -->
+<div class="preloading">
+	<div class="wrap-preload">
+		<div class="cssload-loader"></div>
+	</div>
+</div>
+<!-- .Preloading -->
+<!-- Sidebar left -->
+<nav id="sidebarleft" class="sidenav" >
+	<div id="dismiss">
+		<i class="fas fa-times"></i>
+	</div>
+	<div class="sidebar-header">
+		<!-- <h3>Accounta</h3> -->
+		<div class="logo"  style="margin-right: 10px;"><img src="img/logo.png"></div>
+	</div>
+	<div class="sdprofile">
+		<div class="sdp-left">
+			<img src="img/me.jpg" alt="profile">
+		</div>
+		<div class="sdp-right">
+			<div class="sd-name">Markus Roberto</div>
+			<div class="sd-status">The lamb of God</div>
+		</div>
+	</div>
+	<ul class="list-unstyled components">
+		<li>
+			<a href="https://robertomarkus.github.io/gkipalsi"><i class="fas fa-home"></i>Beranda</a>
+		</li>
+		<li>
+			<a href="#"><i class="fas fa-car"></i>Tentang Kami</a>
+		</li>
+		<li>
+			<a href="#" data-toggle="collapse" aria-expanded="false"><i class="fas fa-receipt"></i>My Bookings <span><i class="fas fa-caret-down"></i></span></a>
+			<ul class="collapse collapsible-body" id="pagemybooking">
+				<li>
+					<a href="my_rides.html">My rides</a>
+				</li>
+				<li>
+					<a href="cart.html">Cart</a>
+				</li>
+				<li>
+					<a href="checkout.html">Checkout</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<li>
+				<a href="#" data-toggle="collapse" aria-expanded="false"><i class="fas fa-user"></i>My Account <span><i class="fas fa-caret-down"></i></span></a>
+				<ul class="collapse collapsible-body" id="pagemyaccount">
+					<li>
+						<a href="profile.html">Profile</a>
+					</li>
+					<li>
+						<a href="setting.html">Settings</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-car"></i>Kebaktian Umum</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-map"></i>Kebaktian Anak</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-newspaper"></i>Kebaktian Remaja</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-newspaper"></i>Kebaktian Pemuda</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-newspaper"></i>Komisi Usia Lanjut</a>
+			</li>
+			
+			<li>
+				<a href="#" data-toggle="collapse" aria-expanded="false"><i class="fas fa-clone"></i>Pages <span><i class="fas fa-caret-down"></i></span></a>
+				<ul class="collapse collapsible-body" id="pagesubmenu">
+					<li>
+						<a href="https://robertomarkus.github.io/gkipalsi">Beranda</a>
+					</li>
+					<li>
+						<a href="car_list.html">Car list</a>
+					</li>
+					<li>
+						<a href="car_single.html">Car single</a>
+					</li>
+					<li>
+						<a href="feedback.html">Feedback</a>
+					</li>
+					<li>
+						<a href="setting.html">Setting</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="news_list.html">News list</a>
+					</li>
+					<li>
+						<a href="news.html">News</a>
+					</li>
+					<li>
+						<a href="register.html">Register</a>
+					</li>
+					<li>
+						<a href="login.html">Login</a>
+					</li>
+					<li>
+						<a href="profile.html">Profile</a>
+					</li>
+					<li>
+						<a href="single_page.html">Single page</a>
+					</li>
+					<li>
+						<a href="404.html">404 error page</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="#"><i class="fas fa-star"></i>Rate</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-envelope"></i>Feedback</a>
+			</li>
+			
+			<li>
+				<a href="#"><i class="fas fa-exclamation-circle"></i>Kontak</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- .Sidebar left -->
+			
+		
+			<!-- Sidebar right -->
+			<nav id="sidebarright" class="sidenav">
+				<div id="dismiss">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="sidebar-header">
+					<h3>Notifikasi</h3>
+				</div>
+				<ul class="right-menu">
+					
+					<li class="right-menu-item">
+						<a href="#">
+							<i class="fas fa-envelope"></i>
+							<div class="ntitle">Notifkasi 1</div>
+							<div class="desc">lorem ipsum dolor sit amet...</div>
+						</a>
+					</li>
+					<li class="right-menu-item">
+						<a href="#">
+							<i class="fas fa-star"></i>
+							<div class="ntitle">Notifkasi 2</div>
+							<div class="desc">lorem ipsum dolor sit amet...</div>
+						</a>
+					</li>
+					<li class="right-menu-item">
+						<a href="#">
+							<i class="fas fa-car-alt"></i>
+							<div class="ntitle">Notifkasi 3</div>
+							<div class="desc">lorem ipsum dolor sit amet...</div>
+						</a>
+					</li>
+					<li class="right-menu-item">
+						<a href="#">
+							<i class="fas fa-ticket-alt"></i>
+							<div class="ntitle">Notifkasi 4</div>
+							<div class="desc">lorem ipsum dolor sit amet...</div>
+						</a>
+					</li>
+					<li class="right-menu-item">
+						<a href="#">
+							<i class="fas fa-envelope"></i>
+							<div class="ntitle">Notifkasi 5</div>
+							<div class="desc">lorem ipsum dolor sit amet...</div>
+						</a>
+					</li>
+					
+				</ul>
+
+
+				
+			</nav>
+			<!-- .Sidebar right-->
+			<!-- Header  -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-header">
+				<div class="container-fluid">
+					<button type="button" id="sidebarleftbutton" class="btn">
+					<i class="fas fa-align-left"></i>
+					</button>
+					<div class="logo"><img src="img/logo.png"></div>
+					<button type="button" id="sidebarrightbutton" class="btn">
+					<div class="notif">
+						<i class="fas fa-bell"></i>
+						<i class="fas fa-circle "></i>
+					</div>
+					</button>
+				</div>
+			</nav>
+			<!-- .Header  -->
+      <!-- Content  -->
+      <div id="content">
+        <div class="content-wrap page-login">
+          <div class="subsite-banner">
+			<img src="./img/slider/slide-warta.gif">
+			<!-- <img src="img/subsite-banner-6.jpg"> -->
+          </div>
+          <div class="subsite subsite-with-banner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="subsite-heading">
+                  Warta Jemaat 2021
+                </div>
+              </div>
+            </div>
+			<br>
+
+
+			<button class="accordion"><span style="font-weight: bold;">Januari</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2021-01-03.html">Kebaktian Minggu, 03 Januari 2021</a>
+                <a href="./warta-2021-01-10.html">Kebaktian Minggu, 10 Januari 2021</a>
+				<!-- <a href="#">Kebaktian Minggu, 17 Januari 2021</a> -->
+				<!-- <a href="#">Kebaktian Minggu, 24 Januari 2021</a> -->
+				<!-- <a href="#">Kebaktian Minggu, 31 Januari 2021</a> -->
+                </div>
+            </div>
+            <br>
+			
+
+			
+            <div class="row">
+              <div class="col-md-12">
+                <div class="subsite-heading">
+                  Warta Jemaat 2020
+                </div>
+              </div>
+            </div>
+            <br>
+
+            
+            <button class="accordion"><span style="font-weight: bold;">Desember</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-12-06.html">Kebaktian Minggu, 06 Desember 2020</a>
+                <a href="./warta-2020-12-13.html">Kebaktian Minggu, 13 Desember 2020</a>
+                <a href="./warta-2020-12-20.html">Kebaktian Minggu, 20 Desember 2020</a>
+                </div>
+            </div>
+            <br>
+            
+
+            
+            <button class="accordion"><span style="font-weight: bold;">November</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-11-01.html">Kebaktian Minggu, 01 November 2020</a>
+                <a href="./warta-2020-11-08.html">Kebaktian Minggu, 08 November 2020</a>
+                <a href="./warta-2020-11-15.html">Kebaktian Minggu, 15 November 2020</a>
+                <a href="./warta-2020-11-22.html">Kebaktian Minggu, 22 November 2020</a>
+                <a href="./warta-2020-11-29.html">Kebaktian Minggu, 29 November 2020</a>
+              </div>
+            </div>
+            <br>
+            
+            
+            <button class="accordion"><span style="font-weight: bold;">Oktober</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-10-04.html">Kebaktian Minggu, 04 Oktober 2020</a>
+                <a href="./warta-2020-10-11.html">Kebaktian Minggu, 11 Oktober 2020</a>
+                <a href="./warta-2020-10-18.html">Kebaktian Minggu, 18 Oktober 2020</a>
+                <a href="./warta-2020-10-25.html">Kebaktian Minggu, 25 Oktober 2020</a>
+              </div>
+            </div>
+            <br>
+            
+
+            <button class="accordion"><span style="font-weight: bold;">September</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-09-06.html">Kebaktian Minggu, 06 September 2020</a>
+                <a href="./warta-2020-09-13.html">Kebaktian Minggu, 13 September 2020</a>
+                <a href="./warta-2020-09-20.html">Kebaktian Minggu, 20 September 2020</a>
+                <a href="./warta-2020-09-27.html">Kebaktian Minggu, 27 September 2020</a>
+              </div>
+            </div>
+            <br>
+            
+
+            <button class="accordion"><span style="font-weight: bold;">Agustus</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-08-02.html">Kebaktian Minggu, 02 Agustus 2020</a>
+                <a href="./warta-2020-08-09.html">Kebaktian Minggu, 09 Agustus 2020</a>
+                <a href="./warta-2020-08-16.html">Kebaktian Minggu, 16 Agustus 2020</a>
+                <a href="./warta-2020-08-23.html">Kebaktian Minggu, 23 Agustus 2020</a>
+                <a href="./warta-2020-08-30.html">Kebaktian Minggu, 30 Agustus 2020</a>
+              </div>
+            </div>
+            <br>
+            
+
+            <button class="accordion"><span style="font-weight: bold;">Juli</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+               	<a href="./warta-2020-07-05.html">Kebaktian Minggu, 05 Juli 2020</a>
+                <a href="./warta-2020-07-12.html">Kebaktian Minggu, 12 Juli 2020</a>
+                <a href="./warta-2020-07-19.html">Kebaktian Minggu, 19 Juli 2020</a>
+                <a href="./warta-2020-07-26.html">Kebaktian Minggu, 26 Juli 2020</a>
+              </div>
+            </div>
+            <br>
+            
+
+            <button class="accordion"><span style="font-weight: bold;">Juni</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-06-07.html">Kebaktian Minggu Trinitas, 07 Juni 2020</a>
+                <a href="./warta-2020-06-14.html">Kebaktian Minggu, 14 Juni 2020</a>
+                <a href="./warta-2020-06-21.html">Kebaktian Minggu, 21 Juni 2020</a>
+                <a href="./warta-2020-06-28.html">Kebaktian Minggu, 28 Juni 2020</a>
+              </div>
+            </div>
+            <br>
+            
+            
+            <button class="accordion"><span style="font-weight: bold;">Mei</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <a href="./warta-2020-05-03.html">Kebaktian Minggu Paskah IV, 03 Mei 2020</a>
+                <a href="./warta-2020-05-10.html">Kebaktian Minggu Paskah V, 10 Mei 2020</a>
+				<a href="./warta-2020-05-17.html">Kebaktian Minggu Paskah VI, 17 Mei 2020</a>
+				<a href="./warta-2020-05-21.html">Kebaktian Kenaikan Yesus Kristus, 21 Mei 2020</a>
+                <a href="./warta-2020-05-24.html">Kebaktian Minggu Paskah VII, 24 Mei 2020</a>
+                <a href="./warta-2020-05-31.html">Kebaktian Pentakosta, 31 Mei 2020</a>
+              </div>
+            </div>
+            <br>
+            
+            
+            <button class="accordion"><span style="font-weight: bold;">April</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+				<a href="./warta-2020-04-05.html">Kebaktian Minggu, 05 April 2020</a>
+				<a href="./warta-2020-04-10.html">Kebaktian Jumat Agung, 10 April 2020</a>
+                <a href="./warta-2020-04-12.html">Kebaktian Minggu Paskah, 12 April 2020</a>
+                <a href="./warta-2020-04-19.html">Kebaktian Minggu Paskah II, 19 April 2020</a>
+				<a href="./warta-2020-04-26.html">Kebaktian Minggu Paskah III, 26 April 2020</a>
+				<a href="./warta-2020-04-11.html">Renungan dan Kontemplasi Sabtu Sunyi, 11 April 2020</a>
+              </div>
+            </div>
+            <br>
+            
+
+
+            <button class="accordion"><span style="font-weight: bold;">Maret</span><i class="fas fa-chevron-down"></i></button>
+            <div class="panel">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              <div class="vertical-menu">
+                <!-- <a href="#" class="active">Home</a> -->
+                <!-- <a href="#">Kebaktian Minggu, 01 Maret 2020</a>
+                <a href="#">Kebaktian Minggu, 08 Maret 2020</a>
+                <a href="#">Kebaktian Minggu, 15 Maret 2020</a>
+                <a href="#">Kebaktian Minggu, 22 Maret 2020</a> -->
+                <a href="./warta-2020-03-29.html">Kebaktian Minggu, 29 Maret 2020</a>
+              </div>
+            </div>
+            <br>            
+
+
+            
+          </div> 
+        </div>
+      </div>
+      <!-- .Content  -->
+      <!-- Botom Panel  -->
+			<div class="bottom-panel">
+				<div class="bp-col">
+					<a href="https://robertomarkus.github.io/gkipalsi">
+						<div class="bp-icon"><img src="img/iphome.png" alt="icon"> </div>
+						<div class="bp-text">Beranda</div>
+					</a>
+				</div>
+				<div class="bp-col">
+					<a href="#">
+						<div class="bp-icon"><img src="img/ialkitab.png" alt="icon"></div>
+						<div class="bp-text">Alkitab</div>
+					</a>
+				</div>
+				<div class="bp-col">
+					<a href="#">
+						<div class="bp-icon"><img src="img/ikidung.png" alt="icon"></div>
+						<div class="bp-text">Kidung</div>
+					</a>
+				</div>
+				<div class="bp-col">
+					<a href="#">
+						<div class="bp-icon"><img src="img/ipaccount.png" alt="icon"></div>
+						<div class="bp-text">Account</div>
+					</a>
+				</div>
+			</div>
+			<!-- .Bottom Panel  -->
+
+			<!-- Botom Panel  -->
+			<!-- <div class="bottom-panel">
+				<div class="bp-col">
+					<a href="https://robertomarkus.github.io/gkipalsi">
+						<div class="bp-icon"><img src="img/iphome.png" alt="icon"> </div>
+						<div class="bp-text">Beranda</div>
+					</a>
+				</div>
+				<div class="bp-col">
+					<a href="my_rides.html">
+						<div class="bp-icon"><img src="img/ialkitab.png" alt="icon"></div>
+						<div class="bp-text">Alkitab</div>
+					</a>
+				</div>
+				<div class="bp-col">
+					<a href="destinations.html">
+						<div class="bp-icon"><img src="img/ikidung.png" alt="icon"></div>
+						<div class="bp-text">Kidung</div>
+					</a>
+				</div>
+				<div class="bp-col">
+					<a href="setting.html">
+						<div class="bp-icon"><img src="img/ipaccount.png" alt="icon"></div>
+						<div class="bp-text">Account</div>
+					</a>
+				</div>
+			</div> -->
+			<!-- .Bottom Panel  -->
+
+			
+			
+			<div class="overlay"></div>
+			
+			<!-- Optional JavaScript -->
+			<!-- jQuery v3.4.1 -->
+			<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+			<!--  Bootstrap v4.3.1 JS -->
+			<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+			<!-- Magnific Popup core JS file -->
+			<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+			<!-- Slick JS -->
+			<script src="lib/slick/slick/slick.min.js"></script>
+			<!--  Custom JS -->
+			<script src="js/theme.js"></script>
+      
+      
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+		</body>
+	</html>
